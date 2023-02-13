@@ -9,7 +9,7 @@
 .marg-5-top {
 	margin-top: 5px;
 }
-/* Section CSS */
+/* General CSS of Section */
 section {
 	padding: 60px 0;
 	overflow: hidden;
@@ -59,18 +59,18 @@ section {
   .section-title p {
 	margin-bottom: 0;
   }
-  
+  /* End Section */
   /* contact form and client form CSS */
   .contact .info-item+.info-item {
 	margin-top: 40px;
   }
-  
+  /* icons of contact form */
   .contact .info-item i {
 	font-size: 20px;
 	background: #a19535;
 	color: #fff;
-	width: 45px;
-	height: 45px;
+	width: 50px;
+	height: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -78,15 +78,17 @@ section {
 	transition: all 0.3s ease-in-out;
 	margin-right: 15px;
   }
+  /* hover effect of contact form */
   .contact .info-item i:hover{
 	/* text-decoration: none; */
 	background: #fff;
 	color: #a19535;
   }
+  /* text-decoration of icons */
   #atag{
 	text-decoration: none;
   }
-  
+  /* heading of the contact section */
   .contact .info-item h4 {
 	padding: 0;
 	font-size: 17px;
@@ -94,14 +96,14 @@ section {
 	margin-bottom: -0.5px;
 	color: #a19535;
   }
-  
+  /* paragragh */
   .contact .info-item p {
 	padding: 0;
-	margin-bottom: 0;
+	/* margin-bottom: -10px; */
 	font-size: 12px;
 	color: rgba(14, 29, 52, 0.8);
   }
-  
+  /* CSS of the form section */
   .contact .php-email-form {
 	width: 100%;
 	background: #fff;
@@ -110,7 +112,7 @@ section {
   .contact .php-email-form .form-group {
 	padding-bottom: 8px;
   }
-  
+  /* Error message CSS */
   .contact .php-email-form .error-message {
 	display: none;
 	color: #fff;
@@ -125,15 +127,7 @@ section {
   .contact .php-email-form .error-message br+br {
 	margin-top: 25px;
   }
-  
-  .contact .php-email-form .sent-message {
-	display: none;
-	color: #fff;
-	background: #059652;
-	text-align: center;
-	padding: 15px;
-	font-weight: 600;
-  }
+
   
   .contact .php-email-form .loading {
 	display: none;
@@ -173,7 +167,7 @@ section {
   .contact .php-email-form textarea {
 	padding: 10px 12px;
   }
-  
+  /* Button of contact form */
   .contact .php-email-form button[type=submit] {
 	background: #ffc90e;
 	border: 0;
@@ -198,6 +192,7 @@ section {
 	  transform: rotate(360deg);
 	}
   }
+  /* Paragragh of clientform after heading */
 .para {
 	text-align:center; 
 	font-family: 'Open Sans';
@@ -205,188 +200,65 @@ section {
     font-weight: 300;
 	font-size: 15px;
     font-display: swap;
+	margin-bottom: -40px;
     /* src: url(https://img1.wsimg.com/gfonts/s/opensans/v20/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2'); */
     unicode-range: U+0370-03FF;
 }
+ /* Paragragh of contactform after heading */
 .para2{
 	/* text-align:right;  */
 	margin-left: 350px;
+	margin-top: 30px;
 	font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     font-display: swap;
 	font-size: 15px;
+	margin-bottom: -40px;
     /* src: url(https://img1.wsimg.com/gfonts/s/opensans/v20/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2'); */
     unicode-range: U+0370-03FF;
 }
+/* image of the header section of home,contact,client page  */
+.image-bg img{
+	width: 1580.24px; 
+	height: 500px;
+}
+
+  
 .hide {
 	display: none;
   }
+  /* heading of contact us  */
  .head1{
 	text-align: right;
  }
- /* .section_padding_130 {
-    padding-top: 130px;
-    padding-bottom: 130px;
-} */
+/* End Contact us  */
 /* Faqs CSS */
-
+/* button CSS FAQ */
 
 .btns-faq{
 	text-align: center;
 	margin-bottom: 50px;
 	margin-top: -20px;
 }
-.faq .faq-list {
-  padding: 0 100px;
-}
 
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
 
-.faq .faq-list li+li {
-  margin-top: 15px;
-}
 
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
 
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #47b2e4;
-}
-
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list a.collapsed {
-  color: #37517e;
-  transition: 0.3s;
-}
-
-.faq .faq-list a.collapsed:hover {
-  color: #47b2e4;
-}
-
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
-.faqs .fqs {
-    width: 55% !important;
-    margin: 0 auto;
-    padding: 40px 0;
-    text-align: center;
-}
-.faqs .fqs .item-wrapper {
-    margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-    .faqs .fqs .item-wrapper #accordion {
-        margin: 20px 70px !important;
-   }
-}
-.faqs .fqs .item-wrapper h4 {
-    text-align: left;
-    font-size: 22px;
-}
-.faqs .fqs .item-wrapper p {
-    text-align: left !important;
-    font-size: 17px !important;
-    margin: 10px 0 !important;
-}
-.faqs .fqs .item-wrapper ul {
-    margin: 0;
-    padding: 0;
-}
-.faqs .fqs .item-wrapper ul li {
-    color: grey;
-    list-style: none;
-    text-align: left;
-    font-size: 17px;
-}
-.faqs .fqs .item-wrapper ul li strong {
-    color: #656565;
-}
-.faqs .fqs .item-wrapper ul li:before {
-    content: "\f068 ";
-    font-family: "FontAwesome";
-    vertical-align: middle;
-    margin-right: 8px;
-    font-size: 8px;
-}
 
 /* FAQ end section  */
 .why-us .content {
 	padding: 60px 100px 0 100px;
   }
   
-  .why-us .content h3 {
-	font-weight: 400;
-	font-size: 34px;
-	color: #37517e;
-  }
-  
-  .why-us .content h4 {
-	font-size: 20px;
-	font-weight: 700;
-	margin-top: 5px;
-  }
-  
-  .why-us .content p {
-	font-size: 15px;
-	color: #e7f5fb;
-  }
+  /* image at the end  */
   
   .why-us .img {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
   }
+  /* alignment at the end section  */
   
   .why-us .accordion-list {
 	padding: 0 100px 60px 100px;
@@ -406,57 +278,7 @@ section {
 	background: #fff;
 	border-radius: 4px;
   }
-  
-  .why-us .accordion-list a {
-	display: block;
-	position: relative;
-	font-family: "Poppins", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 500;
-	padding-right: 30px;
-	outline: none;
-	cursor: pointer;
-  }
-  
-  .why-us .accordion-list span {
-	color: red;
-	font-weight: 600;
-	font-size: 18px;
-	padding-right: 10px;
-  }
-  
-  .why-us .accordion-list i {
-	font-size: 24px;
-	position: absolute;
-	right: 0;
-	top: 0;
-  }
-  
-  .why-us .accordion-list p {
-	margin-bottom: 0;
-	padding: 10px 0 0 0;
-  }
-  
-  .why-us .accordion-list .icon-show {
-	display: none;
-  }
-  
-  .why-us .accordion-list a.collapsed {
-	color: #343a40;
-  }
-  
-  .why-us .accordion-list a.collapsed:hover {
-	color: #47b2e4;
-  }
-  
-  .why-us .accordion-list a.collapsed .icon-show {
-	display: inline-block;
-  }
-  
-  .why-us .accordion-list a.collapsed .icon-close {
-	display: none;
-  }
+
   
   @media (max-width: 1024px) {
   
@@ -486,7 +308,7 @@ section {
 	  min-height: 200px;
 	}
   }
-  /* button FAQ end section  */
+  /* button - FAQ end section  */
   .btn-real{
 		background: #ffc90e;
 	border: 0;
@@ -496,22 +318,29 @@ section {
 	transition: 0.4s;
 	border-radius: 5px;
   }
+  /* End FAQ end section */
   /* Privacy Heading */
   .privacy-heading{
 	margin-left: 120px !important;
-	
+	/* text-align: center; */
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
   }
   /* Privacy ol class */
-  .your-class{
+  /* .your-class{
 	background: #f5f5f5;
 
-  }
+  } */
+  /* Policy -  bullet points */
  .your-class ol {
 	list-style-type: decimal;
 	/* color: blue; */
 	/* text-align: justify; */
 	font-size: 23px ;
   }
+  /* Policy -  subheadings  */
   .your-class ol h4{
 	font-size: 15px;
   }
@@ -528,10 +357,52 @@ section {
 		font-size: 23px ;
 	  }
   }
+  /* End policy  */
+ /* FAQ CSS  */
+.faq_area {
+    
+    z-index: 1;
+	
+}
+/* box CSS  */
+.faq-accordian {
+  
+    z-index: 1;
+
+}
+/* Alignment of the box  */
+.faq-accordian .card {
+  
+	padding-bottom: 10px;
+    z-index: 1;
+    margin-bottom: 1.5rem;
+	
+}
+
+/* Box CSS in mobile view  */
+@media only screen and (max-width: 575px) {
+    .support-button p {
+        font-size: 14px;
+    }
+}
 
 
+@media only screen and (max-width: 575px) {
+    .support-button i {
+        font-size: 1rem;
+    }
+}
 
-
+.support-button a {
+    text-transform: capitalize;
+    color: #2ecc71;
+}
+@media only screen and (max-width: 575px) {
+    .support-button a {
+        font-size: 13px;
+    }
+}
+/* End FAQ section  */
 
 
 

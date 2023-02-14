@@ -402,7 +402,48 @@ section {
         font-size: 13px;
     }
 }
+/* FAQ arrow in the box  */
+.card-header {
+	position: relative !important;
+	/* margin-left: 10px !important;  */
+  }
+ 
+  
+  .arrow-down {
+	position: absolute;
+	margin-right: 10px;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #000; /* adjust the border size and color as needed */
+  }
+  
+  
 /* End FAQ section  */
+  /* Dropdown arrow - clientform  */
 
-
+.form-group {
+	position: relative;
+  }
+  .arrow-down-form {
+	position: absolute;
+	margin-right: 10px;
+	margin-top: -4px;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000; 
+  }
+  /* policy- text alignment  */
+.your-class{
+	text-align: justify;
+}
 
